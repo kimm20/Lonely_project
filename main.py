@@ -24,6 +24,8 @@ except:
 while True:
     randomuwu=random.randrange(1,100)
     if randomuwu % 5 == 0:
+        if not debugmode:
+            print("P I N G")
         playsound(filename)
     if debugmode:
         print(randomuwu)
