@@ -1,6 +1,8 @@
 import random,time
 from playsound import playsound
 
+
+filename="sound.mp3"
 debugmode=False# if true will print current random number
 def rater():
     rate=float(input("enter rate(1-100 higher=slower) : "))
@@ -22,7 +24,7 @@ except:
 while True:
     randomuwu=random.randrange(1,100)
     if randomuwu % 5 == 0:
-        playsound("sound.mp3")
+        playsound(filename)
     if debugmode:
         print(randomuwu)
     time.sleep(rate)
